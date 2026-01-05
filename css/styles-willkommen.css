@@ -1,6 +1,6 @@
 /* menu-toggle ausblenden */
-.menu-toggle-lang-de,
-.menu-toggle-lang-en {
+#menu-toggle-de,
+#menu-toggle-en {
     display: none;
 }
 
