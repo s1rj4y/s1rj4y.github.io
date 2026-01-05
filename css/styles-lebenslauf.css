@@ -1,0 +1,959 @@
+/* === DESIGN SIMPLE === */
+/* body: Gesamtlayout */
+main.design-simple {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    gap: 1rem;
+    padding: 2rem;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--bg-body);
+    color: var(--text-body);
+}
+
+/* header: Name + Foto */
+main.design-simple #person {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    font-size: 32px;
+    align-items: start;
+}
+
+main.design-simple h1 {
+    margin: 0;
+    padding: 0;
+}
+
+main.design-simple .portrait {
+    max-width: 130px;
+    max-height: auto;
+    border-radius: 10%;
+    padding: 10px 0;
+}
+
+/* Überschriften */
+main.design-simple h2 {
+  font-size: 32px;
+}
+
+main.design-simple .section {
+    margin-bottom: 2rem;
+}
+
+/* Persönliche Daten */
+main.design-simple .personal-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 2.3rem;
+    row-gap: 0.75rem;
+}
+
+main.design-simple #personal h2 {
+    margin-bottom: 1.75rem;
+}
+
+main.design-simple .personal-info p,
+main.design-simple .personal-info a {
+    margin: 0;
+    color: var(--text-body);
+}
+
+main.design-simple .personal-type {
+    font-weight: bold;
+}
+
+main.design-simple .personal-value {
+    align-self: center;
+}
+
+/* Bildungsweg */
+main.design-simple.education-info {
+  display: grid;
+  gap: 1rem;
+}
+
+main.design-simple #education h2 {
+    margin-bottom: 1.75rem;
+}
+
+main.design-simple .education-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-auto-rows: auto;
+    column-gap: 1.5rem;
+    row-gap: 0.15rem;
+    margin-bottom: 1.4rem;
+}
+
+main.design-simple .education-date {
+    grid-column: 1;
+    font-weight: bold;
+    margin: 0;
+}
+
+main.design-simple .education-type {
+    font-weight: bold;
+}
+
+main.design-simple .education-type,
+main.design-simple .education-place,
+main.design-simple .education-additional {
+    grid-column: 2;
+    margin: 0;
+}
+
+/* Berufserfahrung */
+main.design-simple .work-info {
+    display: grid;
+    gap: 1rem;
+}
+
+main.design-simple #work h2 {
+    margin-bottom: 1.75rem;
+}
+
+main.design-simple .work-item {
+    display: grid;
+    grid-template-columns: 143px 1fr;
+    grid-auto-rows: auto;
+    column-gap: 2.5rem;
+    row-gap: 0.15rem;
+    margin-bottom: 0.4rem;
+}
+
+main.design-simple .work-date {
+    grid-column: 1;
+    font-weight: bold;
+    margin: 0;
+}
+
+main.design-simple .work-type {
+    font-weight: bold;
+}
+
+main.design-simple
+.work-type,
+.work-place {
+    grid-column: 2;
+    margin: 0;
+}
+
+/* Kenntnisse */
+main.design-simple .skills-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 2.3rem;
+    row-gap: 0.75rem;
+}
+
+main.design-simple #skills h2 {
+    margin-bottom: 1.75rem;
+}
+
+main.design-simple .skills-info p {
+    margin: 0;
+}
+
+main.design-simple .skills-type {
+    font-weight: bold;
+}
+
+main.design-simple .skills-value {
+    align-self: center;
+}
+
+/* Ladebalken ausblenden */
+main.design-simple .progress-container {
+    display: none;
+}
+
+/* Sprachen */
+main.design-simple .languages-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 2.3rem;
+    row-gap: 0.75rem;
+}
+
+main.design-simple #languages h2 {
+    margin-bottom: 1.75rem;
+}
+
+main.design-simple .languages-info p {
+    margin: 0;
+}
+
+main.design-simple .languages-type {
+    font-weight: bold;
+}
+
+main.design-simple .languages-value {
+    align-self: center;
+}
+
+/* Ladebalken & On-Off-Button ausblenden */
+main.design-simple .progress-container {
+    display: none;
+}
+
+main.design-simple #progress-toggle-btn {
+    display: none;
+}
+
+/* Trennlinien */
+main.design-simple #personal,
+main.design-simple #education,
+main.design-simple #work,
+main.design-simple #skills {
+  border-bottom: 5px solid #555;
+  padding-bottom: 3.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* === DESIGN MODERN === */
+/* Gesamtlayout */
+main.design-modern {
+    max-width: 1000px;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 0.75rem;
+    column-gap: 1rem;
+    padding: 2rem 2rem 3rem 0;
+    font-family: var(--font-modern);
+    background: var(--bg-body);
+    color: var(--text-body);         
+    position: relative;
+    z-index: 0;
+}
+
+/* linke Spalte */
+main.design-modern-blue::before,
+main.design-modern-grey::before,
+main.design-modern-white::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1rem;                   
+    width: 40%;                 
+    border-radius: 10px;
+    z-index: -1;               
+}
+
+main.design-modern-blue::before  { background: var(--color-modern-blue-grid-left);  }
+main.design-modern-grey::before  { background: var(--color-modern-grey-grid-left);  }
+main.design-modern-white::before { 
+    background: var(--color-modern-white-grid-left);
+    box-shadow: 2px 0 6px rgba(0,0,0,0.06);
+    border-right: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Linke Spalte */
+main.design-modern #person    { grid-column: 1; grid-row: 1; }
+main.design-modern #personal  { grid-column: 1; grid-row: 2; }
+main.design-modern #skills    { grid-column: 1; grid-row: 3; }
+main.design-modern #languages { grid-column: 1; grid-row: 4; }
+
+/* Rechte Spalte */ 
+main.design-modern #education { grid-column: 2; }
+main.design-modern #work      { grid-column: 2; }
+
+/* Name + Foto */
+main.design-modern-blue #person,
+main.design-modern-grey #person,
+main.design-modern-white #person {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    min-height: 260px;
+    row-gap: 2.5rem;
+    font-size: 20px;
+    padding: 2rem 0;
+}
+
+main.design-modern-blue #person  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey #person  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white #person { color: var(--color-modern-white-heading); }
+
+main.design-modern h1 {
+    max-width: 250px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 6.5rem;
+    padding: 0;
+    text-align: left;
+}
+
+main.design-modern-blue .portrait,
+main.design-modern-grey .portrait,
+main.design-modern-white .portrait {
+    max-width: 130px;
+    max-height: auto;
+    border-radius: 8px;
+    padding: 0;
+    justify-self: center;
+}
+
+main.design-modern-blue .portrait { 
+    border: 5px solid var(--portrait-border); 
+    box-shadow: 
+        0 4px 12px rgba(0,0,0,0.15),
+        inset 0 2px 0 rgba(255,255,255,0.6),
+        inset 0 -2px 0 rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+main.design-modern-grey .portrait  { border: 1px solid var(--color-modern-grey-heading);  }
+main.design-modern-white .portrait { border: 1px solid var(--color-modern-white-heading); }
+
+/* Persönliche Daten */
+main.design-modern .personal-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    row-gap: 0.75rem;
+    padding: 0 0 0 3rem;
+    font-size: 14px;
+}
+
+main.design-modern-blue #personal h2,
+main.design-modern-grey #personal h2,
+main.design-modern-white #personal h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+    
+}
+
+main.design-modern-blue #personal h2  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey #personal h2  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white #personal h2 { color: var(--color-modern-white-heading); }
+
+main.design-modern .personal-info p,
+main.design-modern .personal-info a {
+    margin: 0;
+    color: var(--text-body);
+}
+
+/* personal-type ausblenden */
+main.design-modern .personal-info .personal-type {
+    position: relative;
+    padding-left: 0;
+    color: transparent;
+}
+
+main.design-modern .personal-value {
+    align-self: center;
+}
+
+/* Icons: personal-value */
+main.design-modern .personal-info .personal-type::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Icon: Geburtsdatum */
+main.design-modern .personal-type.lang-de:nth-of-type(1)::before,
+main.design-modern .personal-type.lang-en:nth-of-type(2)::before {
+    background-image: url("../img/icon_birth-date-light.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Icon: Geburtsort */
+main.design-modern .personal-type.lang-de:nth-of-type(5)::before,
+main.design-modern .personal-type.lang-en:nth-of-type(6)::before {
+    background-image: url("../img/icon_birth-place-light.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Icon: Adresse */
+main.design-modern .personal-type.lang-de:nth-of-type(8)::before,
+main.design-modern .personal-type.lang-en:nth-of-type(9)::before {
+    background-image: url("../img/icon_address-light.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Icon: Telefon */
+main.design-modern .personal-type.lang-de:nth-of-type(11)::before,
+main.design-modern .personal-type.lang-en:nth-of-type(12)::before {
+    background-image: url("../img/icon_phone-light.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Icon: Email */
+main.design-modern .personal-type:nth-of-type(14)::before {
+    background-image: url("../img/icon_email-light.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Icon: Webseite */
+main.design-modern .personal-type.lang-de:nth-of-type(16)::before,
+main.design-modern .personal-type.lang-en:nth-of-type(17)::before {
+    background-image: url("../img/icon_webpage-light.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Kenntnisse & Sprachen */
+main.design-modern .skills-info,
+main.design-modern .languages-info {
+    display: grid;
+    grid-template-columns: 1.5fr auto 1fr;
+    column-gap: 2.3rem;
+    row-gap: 0.75rem;
+    padding: 0 3rem;
+    font-size: 14px;
+}
+
+main.design-modern #skills .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0 3rem;
+}
+
+main.design-modern-blue #skills h2,
+main.design-modern-grey #skills h2,
+main.design-modern-white #skills h2 {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+main.design-modern-blue #skills h2  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey #skills h2  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white #skills h2 { color: var(--color-modern-white-heading); }
+
+main.design-modern-blue #languages h2,
+main.design-modern-grey #languages h2,
+main.design-modern-white #languages h2 {
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+}
+
+main.design-modern-blue #languages h2  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey #languages h2  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white #languages h2 { color: var(--color-modern-white-heading); }
+
+main.design-modern .skills-info p,
+main.design-modern .languages-info p {
+    margin: 0;
+}
+
+main.design-modern .skills-type,
+main.design-modern .languages-type {
+    font-weight: bold;
+}
+
+main.design-modern .languages-value {
+    align-self: center;
+}
+
+/* values ausblenden */
+main.design-modern .skills-value,
+main.design-modern .languages-value {
+    width: 0;
+    overflow: hidden;
+    color: transparent;
+    margin: 0;
+}
+
+/* On-Off-Button: Ladebalken */
+main.design-modern-blue .progress-toggle,
+main.design-modern-grey .progress-toggle,
+main.design-modern-white .progress-toggle {
+    width: 60px;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    
+    background: #eee;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+main.design-modern-blue .progress-toggle  { border: 1px solid var(--color-modern-blue-heading);  }
+main.design-modern-grey .progress-toggle  { border: 1px solid var(--color-modern-grey-heading);  }
+main.design-modern-white .progress-toggle { border: 1px solid var(--color-modern-white-heading); }
+
+main.design-modern-blue .progress-toggle.active {
+    background: var(--color-modern-blue-heading);
+    color: #fff;
+}
+
+main.design-modern-grey .progress-toggle.active {
+    background: var(--color-modern-grey-heading);
+    color: #fff;
+}
+
+main.design-modern-white .progress-toggle.active {
+    background: var(--color-modern-white-heading);
+    color: #fff;
+}
+
+/* Ladebalken */
+main.design-modern .progress-container {
+    height: 1.2rem;
+    background: rgba(0,0,0,0.1);
+    border-radius: var(--radius-m);
+    overflow: hidden;
+}
+
+main.design-modern-blue .progress-bar,
+main.design-modern-grey .progress-bar,
+main.design-modern-white .progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: var(--radius-m);
+    transition: width 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+main.design-modern-blue .progress-bar  { background: linear-gradient(90deg, var(--color-modern-blue-heading));  }
+main.design-modern-grey .progress-bar  { background: linear-gradient(90deg, var(--color-modern-grey-heading));  }
+main.design-modern-white .progress-bar { background: linear-gradient(90deg, var(--color-modern-white-heading)); }
+
+/* Bildungsweg */
+main.design-modern .education-info {
+  display: grid;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+main.design-modern-blue #education h2,
+main.design-modern-grey #education h2,
+main.design-modern-white #education h2 {
+    margin-left: 2rem;
+    margin-bottom: 1.75rem; 
+}
+
+main.design-modern-blue #education h2  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey #education h2  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white #education h2 { color: var(--color-modern-white-heading); }
+
+main.design-modern .education-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-auto-rows: auto;
+    column-gap: 1.5rem;
+    row-gap: 0.15rem;
+    margin-bottom: 0.75rem;
+}
+
+main.design-modern .education-date {
+    grid-column: 1;
+    font-weight: bold;
+    margin: 0;
+}
+
+main.design-modern .education-type {
+    font-weight: bold;
+}
+
+main.design-modern .education-type,
+main.design-modern .education-place,
+main.design-modern .education-additional {
+    grid-column: 2;
+    margin: 0;
+}
+
+/* Berufserfahrung */
+main.design-modern .work-info {
+    display: grid;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+main.design-modern-blue #work h2,
+main.design-modern-grey #work h2,
+main.design-modern-white #work h2 {
+    margin-top: 3.5rem;
+    margin-left: 2rem;
+    margin-bottom: 1.75rem;
+}
+
+main.design-modern-blue #work h2  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey #work h2  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white #work h2 { color: var(--color-modern-white-heading); }
+
+main.design-modern .work-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-auto-rows: auto;
+    column-gap: 1.5rem;
+    row-gap: 0.15rem;
+    margin-bottom: 0.75rem;
+}
+
+main.design-modern .work-date {
+    grid-column: 1;
+    font-weight: bold;
+    margin: 0;
+}
+
+main.design-modern .work-type {
+    font-weight: bold;
+}
+
+main.design-modern .work-type,
+main.design-modern .work-place {
+    grid-column: 2;
+    margin: 0;
+}
+
+/* === DESIGN RETRO === */
+/* Gesamtlayout */
+main.design-retro {
+    max-width: 1300px;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 0.75rem;
+    column-gap: 1rem;
+    padding: 2rem 2rem 3rem 0;
+    font-family: var(--font-retro);
+    background-color: var(--bg-body-retro);
+    border: 12px double var(--text-body-retro-magenta);
+    box-shadow: 4px 4px 0 #000, inset 0 0 0 4px #000;
+    border-radius: var(--radius-m);
+    color: var(--text-body-retro-green);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+main.design-retro::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        rgba(0,0,0,0.3) 2px,
+        transparent 4px
+    );
+    background-size: 100% 8px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Linke Seite */
+main.design-retro #person    { grid-column: 1; grid-row: 1; }
+main.design-retro #skills    { grid-column: 1; grid-row: 2; }
+main.design-retro #education { grid-column: 1 / 3; grid-row: 3; }
+main.design-retro #work      { grid-column: 1 / 3; grid-row: 4; }
+
+/* Rechte Seite */ 
+main.design-retro #personal   { grid-column: 2; grid-row: 1; }
+main.design-retro #languages { grid-column: 2; grid-row: 2; }
+
+/* Name + Foto */
+main.design-retro #person {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: end;
+    justify-items: center;
+    align-items: center;
+    width: 350px;
+    min-height: 260px;
+    row-gap: 2.5rem;
+    font-size: 20px;
+    color: var(--text-body-retro-magenta);
+    padding: 1rem;
+    border: 4px solid var(--text-body-retro-magenta);
+    margin: 1rem;
+}
+
+main.design-retro h1 {
+    max-width: 250px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 0 8px currentColor;
+}
+
+main.design-retro .portrait {
+    max-width: 175px;
+    max-height: auto;
+    border: 4px groove var(--text-body-retro-magenta);
+    justify-self: center;
+    padding: 0;
+    margin:0;
+}
+
+/* Persönliche Daten */
+main.design-retro #personal {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+    min-height: 260px;      
+    font-size: 16px;
+    color: var(--text-body-retro-magenta);
+    padding: 1rem;
+    border: 4px solid var(--text-body-retro-magenta);
+    margin: 1rem;
+}
+
+main.design-retro .personal-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    padding: 0;
+    font-size: 14px;
+}
+
+main.design-retro #personal h2 {
+    color: var(--text-body-retro-magenta);
+    margin: 0 0 0.25rem 0;
+    padding: 0;
+    text-shadow: 0 0 8px currentColor;
+}
+
+main.design-retro .personal-info p,
+main.design-retro .personal-info a {
+    margin: 0;
+    color: var(--text-body-retro-green);
+}
+
+/* Kenntnisse & Sprachen */
+main.design-retro #skills,
+main.design-retro #languages {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+    min-height: 260px;
+    font-size: 16px;
+    color: var(--text-body-retro-magenta);
+    padding: 1rem;
+    padding-top: 1.8rem;
+    border: 4px solid var(--text-body-retro-magenta);
+    margin: 1rem;
+}
+
+main.design-retro #skills h2,
+main.design-retro #languages h2 {
+    margin: 0 0 2.5rem 0;
+    padding: 0;
+    color: var(--text-body-retro-magenta);
+    letter-spacing: 0.03em;
+    text-shadow: 0 0 8px currentColor;
+}
+
+main.design-retro .skills-info,
+main.design-retro .languages-info {
+    display: grid;
+    grid-template-columns: 1.5fr auto 1fr;
+    column-gap: 1rem;
+    row-gap: 0.25rem;
+    padding: 0;
+    font-size: 12px;
+    color: var(--text-body-retro-green);
+}
+
+main.design-retro .skills-info p,
+main.design-retro .languages-info p {
+    margin: 0.3rem 0.5rem;
+}
+
+/* values ausblenden */
+main.design-retro .skills-value,
+main.design-retro .languages-value {
+    width: 0;
+    overflow: hidden;
+    color: transparent;
+    margin: 0;
+}
+
+/* On-Off-Button: Ladebalken */
+main.design-retro .progress-toggle {
+    position: absolute;
+    top: 0.8rem;                  
+    right: 1.2rem;
+    width: 55px;
+    height: 55px;
+    padding: 0.3rem 0.8rem;
+    border: 3px groove var(--text-body-retro-magenta);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #000, 0 0 0 8px var(--text-body-retro-magenta);
+    background: var(--text-body-retro-green);
+    color: #000;
+    cursor: pointer;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow:
+        0 0 0 2px #000,
+        0 0 8px var(--text-body-retro-magenta);
+}
+
+main.design-retro .progress-toggle.active {
+    background: #000;
+    color: var(--text-body-retro-magenta);
+    box-shadow:
+        0 0 0 2px #000,
+        0 0 10px var(--text-body-retro-green);
+}
+
+/* Ladebalken */
+main.design-retro #skills .progress-container,
+main.design-retro #languages .progress-container {
+    width: 250px;        
+    height: 1rem;
+    margin: 0.1rem 0 0.6rem;
+    background: #000;
+    border: 3px groove var(--text-body-retro-magenta);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+    overflow: hidden;
+}
+
+main.design-retro .progress-bar {
+    height: 100%;
+    width: 0;
+    background:
+        repeating-linear-gradient(
+            135deg,
+            var(--text-body-retro-green) 0,
+            var(--text-body-retro-green) 4px,
+            #00aa33 4px,
+            #00aa33 8px
+        );
+    box-shadow: 0 0 12px var(--text-body-retro-green);
+    transition: width 1.8s ease-in-out;
+    animation: retro-scan 0.6s linear infinite;
+}
+
+@keyframes retro-scan {
+    from { background-position: 0 0; }
+    to   { background-position: 16px 0; }
+}
+
+/* Bildungsweg */
+main.design-retro #education {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+    min-height: 260px;      
+    font-size: 16px;
+    color: var(--text-body-retro-magenta);
+    padding: 1rem;
+    border: 4px solid var(--text-body-retro-magenta);
+    margin: 1rem;
+}
+
+main.design-retro .education-info {
+    display: grid;
+    row-gap: 1.75rem;
+    color: var(--text-body-retro-green);
+    font-size: 14px;
+}
+
+main.design-retro #education h2 {
+    color: var(--text-body-retro-magenta);
+    margin: 0 0 2rem 0;
+    padding: 0;
+    text-shadow: 0 0 8px currentColor;
+}
+
+main.design-retro .education-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-auto-rows: auto;
+    column-gap: 5rem;
+    row-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+main.design-retro .education-date {
+    grid-column: 1;
+    margin: 0;
+}
+
+main.design-retro .education-type {
+    color: var(--text-body-retro-magenta);
+}
+
+main.design-retro .education-type,
+main.design-retro .education-place,
+main.design-retro .education-additional {
+    grid-column: 2;
+    margin: 0;
+}
+
+/* Berufserfahrung */
+main.design-retro #work {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+    min-height: 260px;      
+    font-size: 16px;
+    color: var(--text-body-retro-magenta);
+    padding: 1rem;
+    border: 4px solid var(--text-body-retro-magenta);
+    margin: 1rem;
+}
+
+main.design-retro .work-info {
+    display: grid;
+    row-gap: 1.75rem;
+    color: var(--text-body-retro-green);
+    font-size: 14px;
+}
+
+main.design-retro #work h2 {
+    color: var(--text-body-retro-magenta);
+    margin: 0 0 2rem 0;
+    padding: 0;
+    text-shadow: 0 0 8px currentColor;
+}
+
+main.design-retro .work-item {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-auto-rows: auto;
+    column-gap: 5rem;
+    row-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+main.design-retro .work-date {
+    grid-column: 1;
+    margin: 0;
+}
+
+main.design-retro .work-type {
+    color: var(--text-body-retro-magenta);
+}
+
+main.design-retro .work-type,
+main.design-retro .work-place {
+    grid-column: 2;
+    margin: 0;
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles-global.css">
+    <link rel="stylesheet" href="css/styles-lebenslauf.css">
+    <title>Lebenslauf Sergei Pfeffer</title>
+</head>
+
+<body>
+    <!-- Menüleiste -->
+    <header class="site-header">
+        <div class="sidebar">
+            <!-- Button: Menüleiste öffnen -->
+            <button id="menu-toggle-de" class="menu-toggle lang-de" title="Designs aufklappen">Designs</button>
+            <button id="menu-toggle-en" class="menu-toggle lang-en" title="Open designs">Designs</button>
+
+            <!-- Ausklappbare Leiste -->
+            <div class="menu-content">
+                <!-- Buttons: Design -->
+                <nav class="design-buttons" aria-label="Design wählen">
+                    <button class="design-btn design-simple-btn lang-de" data-design="simple">Simpel</button>
+                    <button class="design-btn design-simple-btn lang-en" data-design="simple">Simple</button>
+                    <label class="design-lbl">--- Modern ---</label>
+                    <button class="design-btn design-modern-blue-btn" data-design="modern-blue"></button>
+                    <button class="design-btn design-modern-grey-btn" data-design="modern-grey"></button>
+                    <button class="design-btn design-modern-white-btn" data-design="modern-white"></button>
+                    <button class="design-btn design-retro-btn" data-design="retro">Retro</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- horizontale Leiste -->
+        <nav class="top-nav">
+            <!-- Links: Navigation zwischen Seiten -->
+            <div class="top-nav-links">
+                <a href="lebenslauf.html" class="btn-cv">
+                    <span class="lang-de">Lebenslauf</span>
+                    <span class="lang-en">Résumé</span>
+                </a>
+                <a href="anschreiben.html" class="btn-cl">
+                    <span class="lang-de">Anschreiben</span>
+                    <span class="lang-en">Cover Letter</span>
+                </a>
+                <a href="kurzprofil.html" class="btn-s">
+                    <span class="lang-de">Kurzprofil</span>
+                    <span class="lang-en">Summary</span>
+                </a>
+            </div>            
+            
+            <!-- Button: Dark Mode -->
+            <div class="btn-dark">
+                <!-- Button: schaltet auf dunkel-->
+                <button id="theme-toggle-dark" class="dark-button" title="Dark Mode" aria-label="Dark Mode">
+                    <img src="img/icon_dark.png" alt="">
+                </button>
+                <!-- Button: schaltet auf hell -->
+                <button id="theme-toggle-light" class="dark-button" title="Light Mode" aria-label="HLight Mode">
+                    <img src="img/icon_light.png" alt="">
+                </button>
+            </div>
+
+            <!-- Button: Sprachauswahl -->
+            <div class="btn-lang">
+                <!-- Button: schaltet auf Englisch -->
+                <button id="lang-toggle-en" class="lang-button lang-de" title="Wähle Sprache: Englisch" aria-label="Sprache Englisch wählen">
+                    <img src="img/icon_lang-en.png" alt="">
+                </button>
+                <!-- Button: schaltet auf Deutsch -->
+                <button id="lang-toggle-de" class="lang-button lang-en" title="Choose language: German" aria-label="Choose language German">
+                    <img src="img/icon_lang-de.png" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="design-simple">
+        <!--Name + Foto-->
+        <div id="person">
+            <h1 class="name lang-de">SERGEI PFEFFER</h1>
+            <img class="portrait" src="/img/portrait.jpg" alt="Sergei Pfeffer Portrait">
+        </div>
+    
+        <!--Persönliche Daten-->
+        <section id="personal" class="section grid-left">
+            <h2>
+                <span class="lang-de">Persönliche Daten</span>
+                <span class="lang-en">Personal Information</span>
+            </h2>
+
+            <div class="personal-info">
+                <p class="personal-type lang-de">Geburtsdatum:</p>
+                <p class="personal-type lang-en">Date of Birth:</p> 
+                <p class="personal-value lang-de">12.07.1987</p>
+                <p class="personal-value lang-en">1987-07-12</p>
+                <p class="personal-type lang-de">Geburtsort:</p>
+                <p class="personal-type lang-en">Place of Birth:</p> 
+                <p class="personal-value">Semiosjornoje (Kasachstan)</p>
+                <p class="personal-type lang-de">Adresse:</p>
+                <p class="personal-type lang-en">Address:</p> 
+                <p class="personal-value">Ohkamp 54, 22339 Hamburg</p>
+                <p class="personal-type lang-de">Telefon:</p>
+                <p class="personal-type lang-en">Phone:</p> 
+                <p class="personal-value">+49 176 638 222 92</p>
+                <p class="personal-type">Email:</p>
+                <p class="personal-value">sergeipfeffer@web.de</p>
+                <p class="personal-type lang-de">Git:</p>
+                <p class="personal-type lang-en">Git:</p>
+                <a class="personal-value" href="https://github.com/s1rj4y?tab=repositories" target="_blank">GitHub Repositories</a>
+            </div>        
+        </section>   
+
+        <!--Bildungsweg-->
+        <section id="education" class="section">
+            <h2>
+                <span class="lang-de">Bildungsweg</span>
+                <span class="lang-en">Course of Education</span>
+            </h2>
+
+            <div class="education-info">
+                <div class="education-item">
+                    <p class="education-date lang-de">2025 - aktuell</p>
+                    <p class="education-date lang-en">2025 - now</p>
+                    <p class="education-type lang-de">Umschulung zum Fachinformatiker für Anwendungsentwickung</p>
+                    <p class="education-type lang-en">Retraining as an IT specialist for application development</p>
+                    <p class="education-place">bfw - Unternehmen für Bildung (Hamburg)</p>
+                </div>
+                <div class="education-item">
+                    <p class="education-date">2022</p>
+                    <p class="education-type lang-de">Zertifikatskurs "Sozialrecht für Gesundheits- und Sozialberufe"</p>
+                    <p class="education-type lang-en">Certificate Course "Social Law for Health and Social Professions"</p>
+                    <p class="education-place">Apollon Hochschule der Gesundheitswirtschaft (online)</p>
+                    <p class="education-additional lang-de">Abschlussnote: 1,3</p>
+                    <p class="education-additional lang-en">Grade: 1,3</p>
+                </div>
+                <div class="education-item">
+                    <p class="education-date">2012 - 2016</p>
+                    <p class="education-type lang-de">Studium der Erziehungswissenschaft, B.A.</p>
+                    <p class="education-type lang-en">Study of Educational Science, B.A.</p>
+                    <p class="education-place">Universität Augsburg (Augsburg)</p>
+                    <p class="education-additional lang-de">Abschlussnote: 1,55</p>
+                    <p class="education-additional lang-en">Grade: 1,55</p>
+                </div>
+                <div class="education-item">
+                    <p class="education-date">2010 - 2012</p>
+                    <p class="education-type lang-de">Ausbildung zum Chemielaboranten</p>
+                    <p class="education-type lang-en">Apprenticeship as a Chemical Laboratory Assistant</p>
+                    <p class="education-place">Fogra Forschungsgesellschaft Druck e.V. (München)</p>
+                    <p class="education-additional lang-de">Abgeschlossen</p>
+                    <p class="education-additional lang-en">Completed</p>
+                </div>
+                <div class="education-item">
+                    <p class="education-date">2008 - 2010</p>
+                    <p class="education-type lang-de">Studium der Materialwissenschaften, B.A.</p>
+                    <p class="education-type lang-en">Study of Materials Science, B.A.</p>
+                    <p class="education-place">Universität Augsburg (Augsburg)</p>
+                    <p class="education-additional lang-de">Abbruch im vierten Semester</p>
+                    <p class="education-additional lang-en">Dropping out in the fourth semester</p>
+                </div>
+                <div class="education-item">
+                    <p class="education-date">1998 - 2007</p>
+                    <p class="education-type">Abitur</p>
+                    <p class="education-place">Johannes Heidenhain Gymnasium (Traunreut)</p>
+                    <p class="education-additional lang-de">Abschlussnote: 2,4</p>
+                    <p class="education-additional lang-en">Grade: 2,4</p> 
+                </div>      
+            </div>
+        </section>
+
+        <!--Berufserfahrung-->
+        <section id="work" class="section">
+            <h2>
+                <span class="lang-de">Berufserfahrung</span>
+                <span class="lang-en">Professional Experience</span>
+            </h2>
+
+            <div class="work-info">
+                <div class="work-item">
+                    <p class="work-date">01/2023 - 08/2024</p>
+                    <p class="work-type lang-de">Erzieher</p>
+                    <p class="work-type lang-en">Kindergarten Teacher</p>
+                    <p class="work-place">SVE Hamburg Bildungspartner GmbH (Hamburg)</p>
+                </div>
+                <div class="work-item">
+                    <p class="work-date">06/2021 - 12/2022</p>
+                    <p class="work-type lang-de">Sozialpädagoge</p>
+                    <p class="work-type lang-en">Social Education Worker</p>
+                    <p class="work-place">Jugendinitiative St. Pauli (Hamburg)</p>
+                </div>
+                <div class="work-item">
+                    <p class="work-date">06/2011 - 10/2011</p>
+                    <p class="work-type lang-de">Pädagogische Fachkraft</p>
+                    <p class="work-type lang-en">Pedagogical Specialist</p>
+                    <p class="work-place">Arche Nova gGmbH (Hamburg)</p>
+                </div>          
+            </div>
+        </section>        
+
+        <!--Kenntnisse-->
+        <section id="skills">
+            <div class="section-header">
+                <h2>
+                    <span class="lang-de">Kenntnisse</span>
+                    <span class="lang-en">Skills</span>
+                </h2>
+                <!-- On-Off-Button: Progress Bars -->
+                <button id="progress-toggle-btn" class="progress-toggle">An</button> 
+            </div>
+            
+            <div class="skills-info">
+                    <p class="skills-type">MS Office:</p> 
+                    <p class="skills-value">90%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="90"></div>
+                    </div>
+
+                    <p class="skills-type lang-de">C# - Grundlagen:</p> 
+                    <p class="skills-type lang-en">C# - Basics:</p>
+                    <p class="skills-value">100%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="100"></div>
+                    </div>
+
+                    <P class="skills-type lang-de">C# - Fortgeschritten:</P> 
+                    <P class="skills-type lang-en">C# - Advanced:</P>
+                    <p class="skills-value">65%</P>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="65"></div>
+                    </div>
+
+                    <p class="skills-type">html/css:</p> 
+                    <p class="skills-value">80%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="80"></div>
+                    </div>
+
+                    <p class="skills-type">JavaScript:</p> 
+                    <p class="skills-value">60%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="60"></div>
+                    </div>
+
+                    <p class="skills-type lang-de">Datenbanken:</p>
+                    <p class="skills-type lang-en">Databases:</p> 
+                    <p class="skills-value">70%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="70"></div>
+                    </div>
+
+                    <p class="skills-type">GitHub:</p> 
+                    <p class="skills-value">80%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="80"></div>
+                    </div>
+
+                    <p class="skills-type">Microcontroller:</p> 
+                    <p class="skills-value">50%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="50"></div>
+                    </div>
+            </div>
+        </section>
+
+        <!--Sprachen-->
+        <section id="languages">
+            <h2>
+                <span class="lang-de">Sprachen</span>
+                <span class="lang-en">Languages</span>
+            </h2>
+            
+            <div class="languages-info">
+                    <p class="languages-type lang-de">Deutsch:</p>
+                    <p class="languages-type lang-en">German:</p>  
+                    <p class="languages-value">100%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="100"></div>
+                    </div>
+
+                    <p class="languages-type lang-de">Englisch:</p>
+                    <p class="languages-type lang-en">English:</p>
+                    <p class="languages-value">95%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="95"></div>
+                    </div>
+
+                    <p class="languages-type lang-de">Russisch:</p>
+                    <p class="languages-type lang-en">Russian:</p>
+                    <p class="languages-value">30%</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" data-percent="30"></div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+<script src="js/menu-switcher.js"></script>
+<script src="js/lang-switcher.js"></script>
+<script src="js/design-switcher.js"></script>
+<script src="js/progress-bar.js"></script>
+<script src="js/theme-switcher.js"></script>
+</body>
+</html>

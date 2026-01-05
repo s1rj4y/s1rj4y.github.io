@@ -1,0 +1,340 @@
+/* === DESIGN SIMPLE === */
+/* body: Gesamtlayout */
+main.design-simple {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    gap: 1rem;
+    padding: 2rem;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* h1, Kontakt ausblenden */
+main.design-simple h1,
+main.design-simple #contact {
+    display: none;
+}
+
+/* Überschriften */
+main.design-simple h2 {
+    font-size: 26px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+main.design-simple h3 {
+    font-size: 20px;
+    margin-bottom: 1.75rem;
+}
+
+/* Textblöcke */
+main.design-simple .motivation-content,
+main.design-simple .about-me-content {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+/* Listen */
+main.design-simple .strenghts,
+main.design-simple .experiences,
+main.design-simple .accomplishments {
+    font-size: 18px;
+    margin-bottom: 3rem;
+}
+
+/* Datum */
+main.design-simple #date {
+    font-size: 20px;
+    justify-self: right;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+/* Grußformel */
+main.design-simple #greeting {
+    font-size: 20px;
+}
+
+/* Unterschrift */
+main.design-simple .signature-img {
+    max-width: 150px;
+    max-height: auto;
+}
+
+main.design-simple #signature {
+    font-size: 20px;
+}
+
+/* DESIGN MODERN */
+/* Gesamtlayout */
+main.design-modern {
+    max-width: 1000px;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto 1fr;
+    row-gap: 0.75rem;
+    column-gap: 1rem;
+    padding: 2rem 2rem 3rem 0;
+    font-family: var(--font-modern);
+    background: var(--bg-body);
+    color: var(--text-body);          
+    position: relative;
+    z-index: 0;
+}
+
+/* linke Spalte */
+main.design-modern-blue::before,
+main.design-modern-grey::before,
+main.design-modern-white::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1rem;                   
+    width: 40%;                 
+    border-radius: 10px;
+    z-index: -1;               
+}
+
+main.design-modern-blue::before  { background: var(--color-modern-blue-grid-left);  }
+main.design-modern-grey::before  { background: var(--color-modern-grey-grid-left);  }
+main.design-modern-white::before { 
+    background: var(--color-modern-white-grid-left);
+    box-shadow: 2px 0 6px rgba(0,0,0,0.06);
+    border-right: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Linke Spalte */
+main.design-modern h1       { grid-column: 1; grid-row: 1; }
+main.design-modern #contact { grid-column: 1; grid-row: 3; align-self: end; }
+
+/* Rechte Spalte */ 
+main.design-modern #motivation { grid-column: 2; grid-row: 1; }
+main.design-modern #about-me   { grid-column: 2; grid-row: 2; }
+
+/* Linke Spalte: Inhalt */
+/* Name */
+main.design-modern-blue h1,
+main.design-modern-grey h1,
+main.design-modern-white h1 {
+    font-size: 36px;
+    text-align: left;
+    margin: 5rem 3rem 2rem 8.5rem;
+}
+
+main.design-modern-blue h1  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey h1  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white h1 { color: var(--color-modern-white-heading); }
+
+/* Kontakt */
+main.design-modern .contact-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    row-gap: 0.75rem;
+    column-gap: 2rem;
+    padding: 0 0 0 3rem;
+    font-size: 14px;
+}
+
+main.design-modern-blue #contact h2,
+main.design-modern-grey #contact h2,
+main.design-modern-white #contact h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem; 
+}
+
+main.design-modern-blue #contact h2  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey #contact h2  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white #contact h2 { color: var(--color-modern-white-heading); }
+
+main.design-modern 
+.contact-info p,
+.contact-info a {
+    margin: 0;
+    color: var(--text-body);
+}
+
+/* Rechte Spalte: Inhalt */
+/* Überschriften */
+main.design-modern #motivation h2,
+main.design-modern #about-me h2,
+main.design-modern #about-me h3 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+main.design-modern-blue #motivation h2,
+main.design-modern-blue #about-me h2,
+main.design-modern-blue #about-me h3  { color: var(--color-modern-blue-heading);  }
+main.design-modern-grey #motivation h2,
+main.design-modern-grey #about-me h2,
+main.design-modern-grey #about-me h3  { color: var(--color-modern-grey-heading);  }
+main.design-modern-white #motivation h2,
+main.design-modern-white #about-me h2,
+main.design-modern-white #about-me h3 { color: var(--color-modern-white-heading); }
+
+/* Textkörper */
+main.design-modern .motivation-content,
+main.design-modern .about-me-content {
+    text-align: justify;
+    margin-left: 2rem;
+    font-size: 16px;
+}
+
+/* Listen */
+main.design-modern .strenghts,
+main.design-modern .experiences,
+main.design-modern .accomplishments {
+    font-size: 14px;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+
+/* Datum */
+main.design-modern #date {
+    text-align: right;
+    font-size: 16px;
+}
+
+/* Grußformel */
+main.design-modern #greeting {
+    font-size: 16px;
+    margin-left: 2rem;
+}
+
+/* Unterschrift */
+main.design-modern .signature-img {
+    max-width: 150px;
+    max-height: auto;
+}
+
+main.design-modern #signature {
+    font-size: 16px;
+    margin-left: 2rem;
+}
+
+/* === DESIGN RETRO === */
+/* Gesamtlayout */
+main.design-retro {
+    max-width: 1300px;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    row-gap: 0.75rem;
+    column-gap: 1rem;
+    padding: 2rem 2rem 3rem 0;
+    font-family: var(--font-retro);
+    background-color: var(--bg-body-retro);
+    border: 12px double var(--text-body-retro-magenta);
+    box-shadow: 4px 4px 0 #000, inset 0 0 0 4px #000;
+    border-radius: var(--radius-m);
+    color: var(--text-body-retro-green);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+main.design-retro::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        rgba(0,0,0,0.3) 2px,
+        transparent 4px
+    );
+    background-size: 100% 8px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* h1, Kontakt ausblenden */
+main.design-retro h1,
+main.design-retro #contact {
+    display: none;
+}
+
+/* Überschriften */
+main.design-retro h2 {
+    font-size: 26px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.75rem;
+    margin-left: 2rem;
+    color: var(--text-body-retro-magenta);
+    text-shadow: 0 0 8px currentColor;
+}
+
+main.design-retro h3 {
+    font-size: 20px;
+    margin-bottom: 1.75rem;
+    color: var(--text-body-retro-magenta);
+    text-shadow: 0 0 8px currentColor;
+    margin-left: 2rem;
+}
+
+/* Textblöcke */
+main.design-retro .motivation-content,
+main.design-retro .about-me-content {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    line-height: 24px;
+}
+
+/* Listen */
+main.design-retro .strenghts,
+main.design-retro .experiences,
+main.design-retro .accomplishments {
+    font-size: 14px;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+
+main.design-retro li {
+    margin-bottom: 0.75rem;
+}
+
+/* Datum */
+main.design-retro #date {
+    font-size: 18px;
+    justify-self: right;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+/* Grußformel */
+main.design-retro #greeting {
+    font-size: 18px;
+    margin-left: 2rem;
+}
+
+/* Unterschrift */
+main.design-retro .signature-img {
+    max-width: 150px;
+    max-height: auto;
+    filter: 
+        brightness(0) saturate(100%) invert(95%) 
+        sepia(10%) saturate(5000%) hue-rotate(180deg) brightness(110%) 
+        contrast(110%);
+    /* Retro-Glow */
+    filter: 
+        brightness(0) saturate(100%) invert(95%) 
+        sepia(10%) saturate(5000%) hue-rotate(180deg) brightness(110%) 
+        contrast(110%)
+        drop-shadow(0 0 8px var(--text-body-retro-green));
+}
+
+main.design-retro #signature {
+    font-size: 18px;
+    margin-left: 2rem;
+}

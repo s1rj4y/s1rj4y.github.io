@@ -1,0 +1,39 @@
+/* menu-toggle ausblenden */
+.menu-toggle {
+    display: none;
+}
+
+/* === Content === */
+.page-content {
+    width: 1150px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.welcome p {
+    margin: 1.5rem 0;
+    font-size: 26px;
+}
+
+.btn-cv {
+    display: inline-block;
+    margin-top: 5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 22px;
+    background: var(--color-btn);
+    color: var(--color-btn-font);
+    text-decoration: none;
+    border: 1px solid var(--color-btn-border);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-soft)
+}
+
+.btn-cv:hover {
+    background: var(--color-accent);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-btn-hover)
+}

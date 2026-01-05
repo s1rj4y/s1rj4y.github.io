@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles-global.css">
+    <link rel="stylesheet" href="css/styles-kurzprofil.css">
+    <title>Anschreiben Sergei Pfeffer</title>
+</head>
+
+<body>
+    <!-- Menüleiste -->
+    <header class="site-header">
+        <div class="sidebar">
+            <!-- Button: Menüleiste öffnen -->
+            <button id="menu-toggle-de" class="menu-toggle lang-de" title="Designs aufklappen">Designs</button>
+            <button id="menu-toggle-en" class="menu-toggle lang-en" title="Open designs">Designs</button>
+
+            <!-- Ausklappbare Leiste -->
+            <div class="menu-content">
+                <!-- Buttons: Design -->
+                <nav class="design-buttons" aria-label="Design wählen">
+                    <button class="design-btn design-simple-btn lang-de" data-design="simple">Simpel</button>
+                    <button class="design-btn design-simple-btn lang-en" data-design="simple">Simple</button>
+                    <label class="design-lbl">--- Modern ---</label>
+                    <button class="design-btn design-modern-blue-btn" data-design="modern-blue"></button>
+                    <button class="design-btn design-modern-grey-btn" data-design="modern-grey"></button>
+                    <button class="design-btn design-modern-white-btn" data-design="modern-white"></button>
+                    <button class="design-btn design-retro-btn" data-design="retro">Retro</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- horizontale Leiste -->
+        <nav class="top-nav">
+            <!-- Links: Navigation zwischen Seiten -->
+            <div class="top-nav-links">
+                <a href="lebenslauf.html" class="btn-cv">
+                    <span class="lang-de">Lebenslauf</span>
+                    <span class="lang-en">Résumé</span>
+                </a>
+                <a href="anschreiben.html" class="btn-cl">
+                    <span class="lang-de">Anschreiben</span>
+                    <span class="lang-en">Cover Letter</span>
+                </a>
+                <a href="kurzprofil.html" class="btn-s">
+                    <span class="lang-de">Kurzprofil</span>
+                    <span class="lang-en">Summary</span>
+                </a>
+            </div>     
+            
+            <!-- Button: Dark Mode -->
+            <div class="btn-dark">
+                <!-- Button: schaltet auf dunkel-->
+                <button id="theme-toggle-dark" class="dark-button" title="Dark Mode" aria-label="Dark Mode">
+                    <img src="img/icon_dark.png" alt="">
+                </button>
+                <!-- Button: schaltet auf hell -->
+                <button id="theme-toggle-light" class="dark-button" title="Light Mode" aria-label="Light Mode">
+                    <img src="img/icon_light.png" alt="">
+                </button>
+            </div>
+            
+            <!-- Button: Sprachauswahl -->
+            <div class="btn-lang">
+                <!-- Button: schaltet auf Englisch -->
+                <button id="lang-toggle-en" class="lang-button lang-de" title="Wähle Sprache: Englisch" aria-label="Sprache Englisch wählen">
+                    <img src="img/icon_lang-en.png" alt="">
+                </button>
+                <!-- Button: schaltet auf Deutsch -->
+                <button id="lang-toggle-de" class="lang-button lang-en" title="Choose language: German" aria-label="Choose language German">
+                    <img src="img/icon_lang-de.png" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="design-simple">
+        <!-- Name: design-modern -->
+        <div id="person">
+            <h1 class="name lang-de">SERGEI PFEFFER</h1>
+        </div>
+
+        <!-- Kontakt: design-modern -->
+        <section id="contact" class="section">
+            <h2>
+                <span class="lang-de">Kontakt</span>
+                <span class="lang-en">Contact Information</span>
+            </h2>
+
+            <div class="contact-info">
+                <p class="contact-type lang-de">Telefon:</p>
+                <p class="contact-type lang-en">Phone:</p> 
+                <p class="contact-value">+49 176 638 222 92</p>
+                <p class="contact-type">Email:</p>
+                <p class="contact-value">sergeipfeffer@web.de</p>
+                <p class="contact-type lang-de">Webseite:</p>
+                <p class="contact-type lang-en">Website:</p> 
+                <a class="contact-value" href="https://github.com/s1rj4y?tab=repositories" target="_blank">GitHub Repositories</a>
+            </div>            
+        </section>
+
+        <!-- Motivation -->
+        <section id="motivation" class="section">
+            <h2>
+                <span class="lang-de">Motivation für meine Bewerbung</span>
+                <span class="lang-en">Motivation for my application</span>
+            </h2>
+
+            <div class="motivation-content">
+                <p class="lang-de">Ich befinde mich derzeit in der Umschulung zum Fachinformatiker für Anwendungsentwicklung, da mich die Softwareentwicklung und die 
+                    Suche nach kreativen Lösungen für komplexe Probleme besonders motivieren. Ein Praktikum bietet mir die Chance, mein bisher erlerntes Wissen in der 
+                    Praxis anzuwenden, Einblicke in reale Projekte zu gewinnen und meine Kenntnisse gezielt zu vertiefen. Besonders wichtig ist mir, in einem Team mit 
+                    erfahrenen Entwicklern zusammenzuarbeiten, von ihnen zu lernen und gleich-zeitig aktiv zum Projekterfolg beizutragen.</p>
+                <p class="lang-en">I am currently undergoing retraining to become an IT specialist for application development because software development and the search 
+                    for creative solutions to complex problems motivates me. An internship offers me the opportunity to apply the knowledge I have acquired so 
+                    far in practice, gain insights into real projects, and enhance my skills in a targeted manner. It is especially important to me to work in a team with 
+                    experienced developers, learn from them, and actively contribute to the success of the project at the same time.</p>    
+            </div>
+        </section>
+        
+        <!-- Selbstbeschreibung -->
+        <section id="about-me" class="section">
+            <h2>
+                <span class="lang-de">Das zeichnet mich aus</span>
+                <span class="lang-en">What characterizes me</span>
+            </h2>
+
+            <div class="about-me-content">
+                <p class="lang-de">Ich besitze eine schnelle Auffassungsgabe, weshalb ich mich schnell und ohne große Schwierigkeiten in neuen Systemen und Settings zurechtfinde. Ich 
+                    stelle mich gerne aufkommenden und komplizierten Problemen, eigne mir hierfür selbstständig notwendiges Wissen und Kenntnisse an oder frage um Rat und Hilfe, wenn 
+                    ich selbst nicht weiterkomme. Auch habe ich ein gutes Gespür für mein Gegenüber, weshalb ich gut in unterschiedlichen Gruppen- und Teamkonstellationen zurechtkomme.</p>
+                <p class="lang-en">I am a fast learner, which is why I can quickly and easily find my way in new systems and settings. I willingly take on emerging 
+                    and complicated problems, independently acquire the necessary knowledge and skills for this, or seek advice and help if I cannot proceed on my own. I also have strong 
+                    interpersonal skills, which is why I get along well in various team environments.</p>    
+            </div>
+
+            <!-- Stärken -->
+            <h3>
+                <span class="lang-de">Meine Stärken</span>
+                <span class="lang-en">My key strenghts</span>
+            </h3>
+
+            <div class="strenghts">
+                <ul class="lang-de">
+                    <li>Strukturierte und analytische Arbeitsweise</li>
+                    <li>Hohes Maß an Geduld</li>
+                    <li>Freude am Suchen nach Lösungen</li>
+                    <li>Teamfähigkeit und das Vermögen unterschiedliche Rollen zu übernehmen</li>
+                </ul>
+
+                <ul class="lang-en">
+                    <li>Structured and analytical way of working</li>
+                    <li>High level of patience</li>                   
+                    <li>Enjoyment in searching for solutions</li>                    
+                    <li>Teamwork skills an the ability to take on different roles</li>
+                </ul>               
+            </div>
+
+            <!-- Erfahrungen -->
+            <h3>
+                <span class="lang-de">Meine Erfahrungen</span>
+                <span class="lang-en">My experiences</span>
+            </h3>
+
+            <div class="experiences">
+                <ul class="lang-de">
+                    <li>Erste Erfahrungen mit objektorientierter Programmierung in C#</li>                    
+                    <li>Erste Erfahrungen im Webdesign und der Webentwicklung (HTML/CSS und JavaScript)</li>                  
+                    <li>Umsetzung kleiner Softwareprojekte im Rahmen der Umschulung</li>                   
+                    <li>Kenntnisse im Umgang mit relationalen Datenbanken (SQL)</li>                   
+                    <li>Nutzung von Git und GitHub zur Versionsverwaltung und Projektorganisation</li>                    
+                </ul>
+                
+                <ul class="lang-en">
+                    <li>First experiences with object-oriented programming in C#</li>
+                    <li>Initial experience in web design and development using HTML, CSS, and JavaScript</li>
+                    <li>Implementation of small software projects as part of the retraining</li>
+                    <li>Knowledge in working with relational databases (SQL)</li>
+                    <li>Use of Git and GitHub for version control and project organization</li>
+                </ul>
+            </div>
+
+            <!-- Erfolge -->
+            <h3>
+                <span class="lang-de">Meine Erfolge</span>
+                <span class="lang-en">My accomplishments</span>
+            </h3>
+            
+            <div class="accomplishments">
+                <ul class="lang-de">
+                    <li>Erfolgreiche Umsetzung eigener Kleiner Projekte (siehe GitHub)</li>                   
+                    <li>Positive Rückmeldungen von Dozenten zu meinen Projektarbeiten</li>                   
+                    <li>Kontinuierlich wachsendes Portfolio auf GitHub</li>                   
+                    <li>Stetige Weiterentwicklung durch selbständiges Lernen (z.B. Udemy-Kurse, Tutorials)</li>                   
+                    <li>Selbstständige Erstellung einer interaktiven Webseite mit HTML/CSS und JavaScript</li>                   
+                </ul>
+                
+                <ul class="lang-en">
+                    <li>Successful implementation of own small projects (see GitHub)</li>
+                    <li>Positive feedback from my teachers on my project work</li>
+                    <li>Continuously growing portfolio on GitHub</li>
+                    <li>Continuous development through self-directed learning (e.g., Udemy courses, tutorials)</li>
+                    <li>Independent development of an interactive website using HTML/CSS and JavaScript</li>
+                </ul>
+            </div>
+
+            <!-- Aktuelles Datum -->
+            <section id="date" class="section lang-de">
+                <span id="current-date"></span>
+            </section>
+
+            <!-- Grußformel -->
+             <section id="greeting" class="section">
+                <p class="lang-de">Mit freundlichen Grüßen,</p>
+                <p class="lang-en">Best reagards,</p>
+             </section>            
+
+            <!-- Unterschrift -->
+            <section id="signature" class="section lang-de">
+                <img class="signature-img signature-img-light" src="img/signature-light.png" alt="Sergei Pfeffers Unterschrift">
+                <img class="signature-img signature-img-dark" src="img/signature-dark.jpg.png" alt="Sergei Pfeffers Unterschrift">
+
+                <p>Sergei Pfeffer</p>
+            </section>
+        </section>
+    </main>
+
+<script src="js/menu-switcher.js"></script>
+<script src="js/lang-switcher.js"></script>
+<script src="js/date-generator.js"></script>
+<script src="js/design-switcher.js"></script>    
+<script src="js/theme-switcher.js"></script>
+</body>
+</html>

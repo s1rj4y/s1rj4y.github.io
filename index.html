@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berwerbung Sergei Pfeffer</title>
+    <link rel="stylesheet" href="css/styles-global.css">
+    <link rel="stylesheet" href="css/styles-willkommen.css">
+</head>
+
+<body>
+    <!-- Menüleiste -->
+    <header class="site-header">
+        <div class="sidebar">
+            <!-- Button: Menüleiste öffnen -->
+            <button id="menu-toggle-de" class="menu-toggle lang-de" title="Designs aufklappen">Designs</button>
+            <button id="menu-toggle-en" class="menu-toggle lang-en" title="Open designs">Designs</button>
+
+            <!-- Ausklappbare Leiste -->
+            <div class="menu-content">
+                
+            </div>
+        </div>
+
+        <!-- horizontale Leiste -->
+        <nav class="top-nav">         
+            <!-- Button: Dark Mode -->
+            <div class="btn-dark">
+                <!-- Button: schaltet auf dunkel-->
+                <button id="theme-toggle-dark" class="dark-button" title="Dark Mode" aria-label="Dark Mode">
+                    <img src="img/icon_dark.png" alt="">
+                </button>
+                <!-- Button: schaltet auf hell -->
+                <button id="theme-toggle-light" class="dark-button" title="Light Mode" aria-label="Light Mode">
+                    <img src="img/icon_light.png" alt="">
+                </button>
+            </div>
+
+            <!-- Button: Sprachauswahl -->
+            <div class="btn-lang">
+                <!-- Button: schaltet auf Englisch -->
+                <button id="lang-toggle-en" class="lang-button lang-de" title="Wähle Sprache: Englisch" aria-label="Sprache Englisch wählen">
+                    <img src="img/icon_lang-en.png" alt="">
+                </button>
+                <!-- Button: schaltet auf Deutsch -->
+                <button id="lang-toggle-de" class="lang-button lang-en" title="Choose language: German" aria-label="Choose language German">
+                    <img src="img/icon_lang-de.png" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <!-- Willkommenstext -->
+        <section class="welcome">
+            <h1>
+                <span class="lang-de">Willkommen auf der Bewerbungswebseite von Sergei Pfeffer</span>
+                <span class="lang-en">Welcome to the application website of Sergei Pfeffer</span>
+            </h1>
+
+            <p class="lang-de">Die Suche nach einem Praktikumsplatz als Umschüler im Bereich der Anwendungsentwicklung erfordert Ausdauer und starke Nerven.</p>
+            <p class="lang-en">Finding an internship as a student in application development requires persistence and strong nerves.</p>          
+
+            <p class="lang-de">Bereits die Erstellung der Bewerbungsunterlagen kann frustrierenden sein, denn auf die Frage, wie eine gute Bewerbung aussehen soll, 
+                gibt es viele unterschiedliche Meinungen. Gleichzeitig sollen die Unterlagen authentisch sein und mich als Person widerspiegeln.</p>
+            <p class="lang-en">Even the preparation of the application documents can be frustrating, because there are many different opinions on what a "good" application 
+                should look like. At the same time, the documents are expected to be authentic and to reflect who I am.</p>
+            
+            <p class="lang-de">Als angehender Fachinformatiker für Anwendungsentwicklung möchte ich Probleme lösungsorientiert und kreativ angehen. Deshalb lade ich Sie ein, 
+                selbst zu entscheiden, welches Design meiner Bewerbung Ihnen am meisten zusagt.</p>
+            <p class="lang-en">As a future IT specialist for application development, I aim to approach problems in a solution-oriented and creative way. That is why I invite you
+                to choose for yourself which design of my application you like best.</p>
+            
+            <!-- Link zum Lebenslauf -->
+            <a href="lebenslauf.html" class="btn-cv lang-de" title="Weiter zum Lebenslauf">Zum Lebenslauf</a>
+            <a href="lebenslauf.html" class="btn-cv lang-en" title="Continue to the résumé">To the Résumé</a>
+        </section>  
+    </main>
+<script src="js/menu-switcher.js"></script>
+<script src="js/lang-switcher.js"></script>    
+<script src="js/theme-switcher.js"></script>
+</body>
+</html>

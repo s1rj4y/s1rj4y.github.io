@@ -1,0 +1,412 @@
+/* === Grundlayout === */
+/* FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    /* Basisfarben */
+    --bg-body: #fff;
+    --text-body: #000;
+
+    /* MENÜLEISTE */
+    --color-sidebar: #89A8B2;
+    --color-btn: #B3C8CF;
+    --color-btn-font: #273F4F;
+    --color-btn-border: #273F4F;
+    --color-accent: #A1E3F9;
+    --shadow-soft: 0 2px 6px rgba(0, 0, 0, 0.18);
+    --shadow-btn-hover: 0 3px 8px rgba(0,0,0,0.25);
+    --radius-m: 4px;
+
+    /* DESIGN SIMPLE */
+    --font-simple: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* DESIGN MODERN */
+    /* blue */
+    --color-modern-blue-grid-left: #9CC6DB;
+    --color-modern-blue-heading: #1581BF;
+    /* grey */
+    --color-modern-grey-grid-left: #7A8C95;
+    --color-modern-grey-heading: #8A0000;
+    /* white */
+    --color-modern-white-grid-left: #F8F9FA;
+    --color-modern-white-heading: #2C5AA0;
+
+    --portrait-border: #fff;
+    --font-modern: 'Trebuchet MS', sans-serif;
+
+    /* DESIGN RETRO */
+    --bg-body-retro: #0A0A0A;
+    --text-body-retro-green: #00FF00;
+    --text-body-retro-magenta: #FF00FF;
+    --font-retro: 'Press Start 2P', monospace;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-body);
+    font-family: var(--font-simple);
+    margin: 0;
+    padding: 0;
+}
+
+/* === MENÜLEISTE === */
+.site-header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    height: 60px;
+    align-items: stretch;
+    box-shadow: var(--shadow-soft)
+}
+
+/* Menüleiste: feste linke Spalte */
+.sidebar {
+    position: relative;
+    background: var(--color-sidebar);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button: Menü */
+.menu-toggle {
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-btn);
+    color: var(--color-btn-font);
+    width: 120px;
+    margin-left: 2.75rem;
+    box-sizing: border-box;
+    border: 1px solid var(--color-btn-border);
+    border-radius: var(--radius-m);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    box-shadow: var(--shadow-soft);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+    background: var(--color-accent);
+    box-shadow: var(--shadow-btn-hover);
+    transform: translateY(-1px);
+}
+
+.menu-toggle:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-soft)
+}
+
+/* Designleiste: einklappbar */
+.menu-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 150px;
+    height: 260px;
+    background: var(--color-sidebar);
+    padding: 0.75rem 0.5rem 1rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.sidebar.open .menu-content {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+/* Designleisteninhalt */
+.menu-content .design-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.menu-content .design-simple-btn {
+    background-color: var(--color-btn);
+    color: var(--color-btn-font);
+    width: 80px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-btn-border);
+    border-radius: var(--radius-m);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow-soft);
+}
+
+.design-btn:hover,
+.design-btn:focus-visible {
+    background: var(--color-accent);
+    box-shadow: var(--shadow-btn-hover);
+    transform: translateY(-1px);
+}
+
+.design-btn:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-soft)
+}
+
+.design-lbl {
+    letter-spacing: 0.03em;
+    color: var(--color-btn-font);
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* blue */
+.design-modern-blue-btn {
+    background-color: var(--color-modern-blue-grid-left);
+    width: 80px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-btn-border);
+    border-radius: var(--radius-m);
+}
+
+/* grey */
+.design-modern-grey-btn {
+    background-color: var(--color-modern-grey-grid-left);
+    width: 80px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-btn-border);
+    border-radius: var(--radius-m);
+}
+
+/* white */
+.design-modern-white-btn {
+    background-color: var(--color-modern-white-grid-left);
+    width: 80px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-btn-border);
+    border-radius: var(--radius-m);
+}
+
+/* retro */
+.design-retro-btn {
+    font-family: var(--font-retro);
+    font-size: 10px;
+    background-color: var(--text-body-retro-green);
+    width: 80px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 2.5px groove var(--text-body-retro-magenta);
+    border-radius: var(--radius-m);
+    margin-top: 1rem;
+}
+
+/* Navigationsleiste: rechte Spalte */
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0 1.5rem;
+    background: var(--color-sidebar);
+}
+
+/* Links */
+.top-nav-links {
+    display: flex;
+    gap: 2rem;
+    flex-grow: 1;
+    justify-content: center;
+    margin-right: 7.8rem;
+}
+
+.top-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 38px;
+    padding: 0;
+    color: var(--color-btn-font);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Button: lang-switcher */
+.btn-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 0;
+}
+
+.top-nav .lang-button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.top-nav .lang-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0.75rem;
+}
+
+.top-nav .lang-button:hover,
+.top-nav .lang-button:focus-visible {
+    transform: translateY(-1px);
+}
+
+/* Button: Dark Mode */
+.btn-dark {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: auto;
+}
+
+.top-nav .dark-button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.top-nav .dark-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.top-nav .dark-button:hover,
+.top-nav .dark-button:focus-visible {
+    transform: translateY(-1px);
+}
+
+/* === Sprachumschaltung === */
+/* Standard: Deutsch anzeigen, Englisch verstecken */
+span.lang-en,
+p.lang-en,
+a.lang-en,
+button.lang-en,
+ul.lang-en,
+.design-simple-btn.lang-en {
+    display: none;
+}
+
+/* Deutsch ausblenden*/
+body.lang-en span.lang-de,
+body.lang-en p.lang-de,
+body.lang-en a.lang-de,
+body.lang-en button.lang-de,
+body.lang-en ul.lang-de,
+body.lang-en .design-simple-btn.lang-de {
+    display: none;
+}
+
+/* Englisch einblenden  */
+body.lang-en span.lang-en,
+body.lang-en p.lang-en,
+body.lang-en ul.lang-en {
+    display: block;
+}
+
+body.lang-en a.lang-en,
+body.lang-en button.lang-en,
+body.lang-en .design-simple-btn.lang-en {
+    display: inline-block;
+}
+
+/* === Umschaltung Dark Mode === */
+body.theme-dark {
+    --bg-body: #18181B;
+    --text-body: #f4f4f4;
+
+    --color-sidebar: #2b3a42;
+    --color-btn: #3c4f5a;
+    --color-btn-font: #f4f4f4;
+    --color-btn-border: #f4f4f4;
+    --color-accent: #4ea3ff;
+
+    /* blue */
+    --color-modern-blue-grid-left: #1f3440;
+    --color-modern-blue-heading: #6ecbff;
+    /* grey */
+    --color-modern-grey-grid-left: #4A5A63;
+    --color-modern-grey-heading: #FF6B6B;
+    /* white */
+    --color-modern-white-grid-left: #2D3748;
+    --color-modern-white-heading: #63B3ED;
+
+    --portrait-border: #18181B;
+}
+
+#theme-toggle-light {
+    display: none;
+}
+
+body.theme-dark #theme-toggle-dark {
+    display: none;
+}
+
+body.theme-dark #theme-toggle-light {
+    display: inline-block;
+}
+
+.signature-img-dark {
+    display: none;
+}
+
+body.theme-dark .signature-img-light {
+    display: none;
+}
+
+body.theme-dark .signature-img-dark {
+    display: inline-block;
+}
+
+/* Geburtsdatum */
+body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(1)::before,
+body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(2)::before {
+    background-image: url("../img/icon_birth-date-dark.png");
+}
+
+/* Geburtsort */
+body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(5)::before,
+body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(6)::before {
+    background-image: url("../img/icon_birth-place-dark.png");
+}
+
+/* Adresse */
+body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(8)::before,
+body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(9)::before {
+    background-image: url("../img/icon_address-dark.png");
+}
+
+/* Telefon */
+body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(11)::before,
+body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(12)::before {
+    background-image: url("../img/icon_phone-dark.png");
+}
+
+/* Email */
+body.theme-dark main.design-modern .personal-type:nth-of-type(14)::before {
+    background-image: url("../img/icon_email-dark.png");
+}
+
+/* Webseite */
+body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(16)::before,
+body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(17)::before {
+    background-image: url("../img/icon_webpage-dark.png");
+}
