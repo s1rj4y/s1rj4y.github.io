@@ -1,5 +1,6 @@
 /* menu-toggle ausblenden */
-.menu-toggle {
+.menu-toggle-lang-de,
+.menu-toggle-lang-en {
     display: none;
 }
 
