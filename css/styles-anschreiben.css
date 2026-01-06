@@ -49,9 +49,9 @@ main.design-simple #cl-body {
 }
 
 /* Unterschrift */
-main.design-simple .signature-img {
-    max-width: 150px;
-    max-height: auto;
+main.design-simple .signature-style {
+    font-family: 'Alex Brush', cursive;
+    font-size: 45px;
 }
 
 /* DESIGN MODERN */
@@ -187,9 +187,9 @@ main.design-modern #cl-body {
 }
 
 /* Unterschrift */
-main.design-modern .signature-img {
-    max-width: 150px;
-    max-height: auto;
+main.design-modern .signature-style {
+    font-family: 'Alex Brush', cursive;
+    font-size: 45px;
 }
 
 /* === DESIGN RETRO === */
@@ -274,9 +274,9 @@ main.design-retro #cl-body {
 }
 
 /* Unterschrift */
-main.design-retro .signature-img {
-    max-width: 150px;
-    max-height: auto;
+main.design-retro .signature-style {
+    font-family: 'Alex Brush', cursive;
+    font-size: 45px;
     filter: 
         brightness(0) saturate(100%) invert(95%) 
         sepia(10%) saturate(5000%) hue-rotate(180deg) brightness(110%) 
