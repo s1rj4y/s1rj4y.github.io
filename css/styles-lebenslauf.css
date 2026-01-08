@@ -26,9 +26,9 @@ main.design-simple h1 {
 }
 
 main.design-simple .portrait {
-    max-width: 130px;
+    max-width: 190px;
     max-height: auto;
-    border-radius: 10%;
+    border-radius: 15%;
     padding: 10px 0;
 }
 
@@ -67,8 +67,13 @@ main.design-simple .personal-value {
     align-self: center;
 }
 
+main.design-simple .personal-value-privacy {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
 /* Bildungsweg */
-main.design-simple.education-info {
+main.design-simple .education-info {
   display: grid;
   gap: 1rem;
 }
@@ -101,6 +106,10 @@ main.design-simple .education-place,
 main.design-simple .education-additional {
     grid-column: 2;
     margin: 0;
+}
+
+main.design-simple .education-additional em {
+    font-size: 0.9em;
 }
 
 /* Berufserfahrung */
@@ -286,15 +295,16 @@ main.design-modern h1 {
     max-width: 250px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 6.5rem;
+    margin-left: 2.5rem;
     padding: 0;
     text-align: left;
+    font-size: 50px;
 }
 
 main.design-modern-blue .portrait,
 main.design-modern-grey .portrait,
 main.design-modern-white .portrait {
-    max-width: 130px;
+    max-width: 200px;
     max-height: auto;
     border-radius: 8px;
     padding: 0;
@@ -351,6 +361,11 @@ main.design-modern .personal-value {
     align-self: center;
 }
 
+main.design-modern .personal-value-privacy {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
 /* Icons: personal-value */
 main.design-modern .personal-info .personal-type::before {
     content: "";
@@ -380,31 +395,31 @@ main.design-modern .personal-type.lang-en:nth-of-type(6)::before {
 }
 
 /* Icon: Adresse */
-main.design-modern .personal-type.lang-de:nth-of-type(8)::before,
-main.design-modern .personal-type.lang-en:nth-of-type(9)::before {
+main.design-modern .personal-type.lang-de:nth-of-type(9)::before,
+main.design-modern .personal-type.lang-en:nth-of-type(10)::before {
     background-image: url("../img/icon_address-light.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 /* Icon: Telefon */
-main.design-modern .personal-type.lang-de:nth-of-type(11)::before,
-main.design-modern .personal-type.lang-en:nth-of-type(12)::before {
+main.design-modern .personal-type.lang-de:nth-of-type(12)::before,
+main.design-modern .personal-type.lang-en:nth-of-type(13)::before {
     background-image: url("../img/icon_phone-light.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 /* Icon: Email */
-main.design-modern .personal-type:nth-of-type(14)::before {
+main.design-modern .personal-type:nth-of-type(16)::before {
     background-image: url("../img/icon_email-light.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 /* Icon: Webseite */
-main.design-modern .personal-type.lang-de:nth-of-type(16)::before,
-main.design-modern .personal-type.lang-en:nth-of-type(17)::before {
+main.design-modern .personal-type.lang-de:nth-of-type(19)::before,
+main.design-modern .personal-type.lang-en:nth-of-type(20)::before {
     background-image: url("../img/icon_webpage-light.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -576,6 +591,10 @@ main.design-modern .education-additional {
     margin: 0;
 }
 
+main.design-modern .education-additional em {
+    font-size: 0.9em;
+}
+
 /* Berufserfahrung */
 main.design-modern .work-info {
     display: grid;
@@ -690,17 +709,17 @@ main.design-retro h1 {
     max-width: 250px;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     text-shadow: 0 0 8px currentColor;
 }
 
 main.design-retro .portrait {
-    max-width: 175px;
+    max-width: 200px;
     max-height: auto;
     border: 4px groove var(--text-body-retro-magenta);
     justify-self: center;
     padding: 0;
-    margin:0;
+    margin-left: 1rem;
 }
 
 /* Persönliche Daten */
@@ -737,6 +756,11 @@ main.design-retro .personal-info p,
 main.design-retro .personal-info a {
     margin: 0;
     color: var(--text-body-retro-green);
+}
+
+main.design-retro .personal-value-privacy {
+    font-style: italic;
+    font-size: 0.9em;
 }
 
 /* Kenntnisse & Sprachen */
@@ -904,6 +928,10 @@ main.design-retro .education-place,
 main.design-retro .education-additional {
     grid-column: 2;
     margin: 0;
+}
+
+main.design-retro .education-additional em {
+    font-size: 0.9em;
 }
 
 /* Berufserfahrung */

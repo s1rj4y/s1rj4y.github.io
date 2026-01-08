@@ -17,6 +17,10 @@
     --shadow-btn-hover: 0 3px 8px rgba(0,0,0,0.25);
     --radius-m: 4px;
 
+    /* PRIVACY BANNER */
+    --bg-banner: #f8f9fa;
+    --accent-blue: #007bff;
+
     /* DESIGN SIMPLE */
     --font-simple: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -339,6 +343,9 @@ body.theme-dark {
     --color-btn-border: #f4f4f4;
     --color-accent: #4ea3ff;
 
+    --bg-banner: #343a40;
+    --accent-blue: #4dabf7;
+
     /* blue */
     --color-modern-blue-grid-left: #1f3440;
     --color-modern-blue-heading: #6ecbff;
@@ -389,24 +396,24 @@ body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(6)::before
 }
 
 /* Adresse */
-body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(8)::before,
-body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(9)::before {
+body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(9)::before,
+body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(10)::before {
     background-image: url("../img/icon_address-dark.png");
 }
 
 /* Telefon */
-body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(11)::before,
-body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(12)::before {
+body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(12)::before,
+body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(13)::before {
     background-image: url("../img/icon_phone-dark.png");
 }
 
 /* Email */
-body.theme-dark main.design-modern .personal-type:nth-of-type(14)::before {
+body.theme-dark main.design-modern .personal-type:nth-of-type(16)::before {
     background-image: url("../img/icon_email-dark.png");
 }
 
 /* Webseite */
-body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(16)::before,
-body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(17)::before {
+body.theme-dark main.design-modern .personal-type.lang-de:nth-of-type(19)::before,
+body.theme-dark main.design-modern .personal-type.lang-en:nth-of-type(20)::before {
     background-image: url("../img/icon_webpage-dark.png");
 }

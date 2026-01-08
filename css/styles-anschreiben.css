@@ -113,9 +113,9 @@ main.design-modern #signature { grid-column: 2; grid-row: 2; }
 main.design-modern-blue h1,
 main.design-modern-grey h1,
 main.design-modern-white h1 {
-    font-size: 36px;
+    font-size: 50px;
     text-align: left;
-    margin: 5rem 3rem 2rem 8.5rem;
+    margin: 5rem 3rem 2rem 6.75rem;
 }
 
 main.design-modern-blue h1  { color: var(--color-modern-blue-heading);  }
@@ -125,7 +125,7 @@ main.design-modern-white h1 { color: var(--color-modern-white-heading); }
 /* Adresse */
 main.design-modern #address {
     align-self: start;
-    margin: 10rem 3rem 0 8.5rem;
+    margin: 10rem 3rem 0 6.75rem;
 }
 
 main.design-modern-blue #address h2,
@@ -166,6 +166,11 @@ main.design-modern
 .contact-info a {
     margin: 0;
     color: var(--text-body);
+}
+
+main.design-modern .contact-value-privacy {
+    font-style: italic;
+    font-size: 0.9em;
 }
 
 /* Rechte Spalte: Inhalt */
